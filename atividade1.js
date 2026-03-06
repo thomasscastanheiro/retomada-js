@@ -46,25 +46,25 @@
     const btnSoma = document.getElementById("somar");
     btnSoma.addEventListener("click" () => {
         let numero1 = document.getElementById("numero1").value;
-        let numero2 = document.getElementById("numero2").value;
-        let soma = parseInt(numero1) + parseInt(numero2);
+        let n2 = document.getElementById("numero2").value;
+        let soma = parseInt(n1) + parseInt(n2);
         console.log(soma);
     });
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 //modelo 4
-// adiciona bolinhas
+// adiciona as bolinhas
     const btnBolinhas = document.getElementById("addBolinhas");
     let total = 0; // contador de bolinhas
     let bolinhas = ""; // conteudo das bolinhas
     let bola = '<div class="bolinha></div>'; // conteudo para adicionar
 
-// acao de clique
+// ação de clique
     btnBolinhas.addEventListener("click" () => {
         total = total+1;
         bolinhas = "";
-        for (let index = 0; index < total; index++) {
+        for (let index = 0; index < total; index++;) {
             bolinhas = bolinhas+bola;
         }
         document.getElementById("agrupaBolinhas").innerHTML = bolinhas;
