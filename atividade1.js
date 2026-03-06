@@ -1,4 +1,4 @@
-d//modelo 1
+//modelo 1
 // declaraçao de variavel
     let texto = window.prompt("Digite seu nome: ");
 
